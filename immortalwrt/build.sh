@@ -1,0 +1,28 @@
+#!/bin/bash
+
+PACKAGES=""
+PACKAGES="$PACKAGES curl"
+PACKAGES="$PACKAGES luci-i18n-base-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
+PACKAGES="$PACKAGES luci-app-diskman"
+PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
+PACKAGES="$PACKAGES luci-app-adblock"
+PACKAGES="$PACKAGES luci-i18n-adblock-zh-cn"
+PACKAGES="$PACKAGES luci-theme-argon"
+PACKAGES="$PACKAGES luci-app-argon-config"
+PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
+PACKAGES="$PACKAGES luci-app-ddns-go"
+PACKAGES="$PACKAGES luci-i18n-ddns-go-zh-cn"
+PACKAGES="$PACKAGES luci-app-wechatpush"
+PACKAGES="$PACKAGES luci-i18n-wechatpush-zh-cn"
+PACKAGES="$PACKAGES luci-app-watchcat"
+PACKAGES="$PACKAGES luci-i18n-watchcat-zh-cn"
+PACKAGES="$PACKAGES luci-app-wol"
+PACKAGES="$PACKAGES luci-i18n-wol-zh-cn"
+PACKAGES="$PACKAGES luci-app-homeproxy"
+PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
+
+
+make image PACKAGES="$PACKAGES" KERNEL_PARTSIZE="300"
+make image PACKAGES="$PACKAGES" ROOTFS_PARTSIZE="2048"

@@ -1,2 +1,2 @@
-# OpenWrt-Docker-Builder
-基于https://github.com/qichiyuhub/OpenWrt-Builder构建
+# OpenWrt-Builder
+根目录自行创建bin文件夹
